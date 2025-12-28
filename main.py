@@ -80,12 +80,12 @@ def devolver_livro():
 
 
     conexao.commit()
-
     
 def empretismo_livro():
     titulo_livro = input("Qual nome do autor ")
 
-
+def doar_livros():
+    print("Agradecimento por está doando livro")
 
 while True:
     print("""
@@ -101,8 +101,14 @@ while True:
     if menu == "0":
         livros()
 
+    elif menu == "1":
+        empretismo_livro()
+
     elif menu == "2":
         devolver_livro()
 
     elif menu == "3":
+        doar_livros()
+
+    elif menu == "4":
         break
